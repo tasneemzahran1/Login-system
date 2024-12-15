@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styling/register.css">
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col">
+                    <i
+                        class="fa-solid fa-right-to-bracket text-white fs-3 border rounded-circle border-dark p-4 bg-dark"></i>
+                    <h2 class="fs-6 fw-semibold pt-3">Smart Login System</h2>
+                    <input type="text" class="form-control w-25 mt-4 m-auto text-center" id="user"
+                        placeholder="USER NAME">
+                    <input type="email" class="form-control w-25 mt-4 m-auto text-center" id="email"
+                        placeholder="EMAIL">
+                    <input type="password" class="form-control w-25 mt-3 m-auto text-center" id="pass"
+                        placeholder="PASSWORD">
+                    <button class="btn w-25 mt-3 color text-white">Sign up</button>
+                    <p class="text-white mt-3">You have an account?<a href="index.html" class="text-white"
+                            id="registeration">Sign in</a></p>
+                    <div class="alert alert-success m-auto w-25 p-2 mt-5 d-none" role="alert">
+                        You signed up successfully!
+                    </div>
+                    <div class="alert alert-warning m-auto w-25 p-2 mt-5 d-none" role="alert">
+                        You have signed up with this email before!
+                    </div>
+                    <div class="alert alert-danger m-auto w-50 p-2 mt-2 d-none" role="alert">
+                        <h5>Please check that:</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>1- Your username <b>starts with capital letter</b> and at most <b>two</b> digits</li>
+                            <li>2- You entered your <b>Gmail</b> account</li>
+                            <li>3- Your password contains <b>at least 8 characters</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./register.js"></script>
+</body>
+
+</html>
